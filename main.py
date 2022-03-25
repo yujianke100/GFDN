@@ -2,7 +2,6 @@ from __future__ import print_function, division
 import argparse
 import random
 import numpy as np
-# from sklearn.cluster import KMeans
 from kmeans import kmeans
 import torch
 import torch.nn as nn
@@ -232,11 +231,6 @@ def train(adjs, n_id, train=True, test_init_data=None, final_epoch = False):
         pre = precision_score(edge_y, pre_result)
         acc = accuracy_score(edge_y, pre_result)
         recall = recall_score(edge_y, pre_result)
-        if(final_epoch):
-            torch.save(x, root_path+'/model/group_pred.pkl')
-            torch.save(n_id[edge_u_id], root_path+'/model/group_pred_uid.pkl')
-            torch.save(model.core_u.weight, root_path+'/model/core_u_weight.pkl')
-            torch.save(model.core_i.weight, root_path+'/model/core_i_weight.pkl')
         torch.cuda.empty_cache()
         return auc, f1, acc, pre, recall, max_th
 

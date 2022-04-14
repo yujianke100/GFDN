@@ -1,4 +1,4 @@
-# Submission for SIGMOD 2022
+# Submission for SIGMOD 2023
 
 ## QueryOPT
 The project that help us implement ($\alpha$, $\beta$)-core is [QueryOPT](https://github.com/boge-liu/alpha-beta-core).

@@ -10,3 +10,6 @@ The project that help us implement ($\alpha$, $\beta$)-core is [QueryOPT](https:
 3. Install [swig](https://github.com/swig/)
 4. Build pyabcore: ``cd ./queryopt && ./build.sh && cd ..``
 5. Start:``python main.py``
+
+## Note
+The last four entrys of customer vertex in the dataset are noise and have been ignored.

@@ -6,7 +6,7 @@ Submission of KDD 2023
 The project that helps us implement (alpha, beta)-core is [QueryOPT](https://github.com/boge-liu/alpha-beta-core).
 
 ## Quick Start
-0. Prepare the environment.:
+0. Prepare the environment:
      ```
      conda create -n gfdn python=3.8
      conda activate gfdn

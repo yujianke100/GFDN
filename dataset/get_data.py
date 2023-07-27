@@ -80,6 +80,11 @@ one_degree_u = u_degrees[u_degrees == 1].axes[0].values
 print(sum(df['u'].isin(one_degree_u) * df['l'] == '1'))
 df.loc[df['u'].isin(one_degree_u) * df['l'] == '1', ['l']] = '0'
 
+save_reindex(df, root_path+'/bdt_full_label.csv')
+
+print('read full label...')
+df = pd.read_csv(root_path+'/bdt_full_label.csv', names=['id', 't', 'u', 'i', 'f','l'], delimiter='\t', nrows=test_num, dtype=str)
+
 save_f_e(df)
 
 df = pd.read_csv(root_path+'/bdt_edges_train.csv', names=['u', 'i','label'], delimiter='\t', dtype=int)

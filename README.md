@@ -1,6 +1,8 @@
 # GFDN
 
-Submission of KDD 2023
+[KDD 2023] Group-based Fraud Detection Network on e-Commerce Platforms
+
+[https://doi.org/10.1145/3580305.3599836](https://doi.org/10.1145/3580305.3599836)
 
 ## QueryOPT
 The project that helps us implement (alpha, beta)-core is [QueryOPT](https://github.com/boge-liu/alpha-beta-core).

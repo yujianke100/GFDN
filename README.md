@@ -18,7 +18,7 @@ The project that helps us implement (alpha, beta)-core is [QueryOPT](https://git
 1. download the dataset from the [competition](https://tianchi.aliyun.com/dataset/dataDetail?dataId=123862). Please download the final round dataset.
 2. Pre-process: ``python dataset/get_data.py``
 3. Install [swig](https://github.com/swig/)
-4. Build pyabcore: ``cd ./queryopt && ./build.sh && cd ..``
+4. Build pyabcore: ``sudo apt-get -y install libboost-all-dev && cd ./queryopt && ./build.sh && cd ..``
 5. Start:``python main.py``
 
 ## Note
